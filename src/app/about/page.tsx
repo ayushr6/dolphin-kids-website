@@ -1,11 +1,26 @@
 import type { Metadata } from "next";
 import Section from "@/components/Section";
-import Card from "@/components/Card";
+import AnimatedStats from "@/components/AnimatedStats";
+import TeamSection from "@/components/TeamSection";
 import about from "@/content/about.json";
 
 export const metadata: Metadata = {
   title: "About",
   description: about.hero.subtitle,
+};
+
+const valueIcons: Record<string, string> = {
+  blue: "🔍",
+  pink: "💗",
+  amber: "⭐",
+  green: "🎉",
+};
+
+const valueBg: Record<string, string> = {
+  blue: "bg-blue-100 text-blue-700",
+  pink: "bg-pink-100 text-pink-700",
+  amber: "bg-amber-100 text-amber-700",
+  green: "bg-green-100 text-green-700",
 };
 
 export default function AboutPage() {
@@ -25,36 +40,62 @@ export default function AboutPage() {
       <Section>
         <div className="grid gap-8 sm:grid-cols-2">
           <div>
-            <h2 className="text-2xl font-bold text-gray-900">{about.mission.title}</h2>
-            <p className="mt-3 text-gray-600 leading-relaxed">{about.mission.text}</p>
+            <h2 className="text-2xl font-bold text-gray-900">
+              {about.mission.title}
+            </h2>
+            <p className="mt-3 leading-relaxed text-gray-600">
+              {about.mission.text}
+            </p>
           </div>
           <div>
-            <h2 className="text-2xl font-bold text-gray-900">{about.vision.title}</h2>
-            <p className="mt-3 text-gray-600 leading-relaxed">{about.vision.text}</p>
+            <h2 className="text-2xl font-bold text-gray-900">
+              {about.vision.title}
+            </h2>
+            <p className="mt-3 leading-relaxed text-gray-600">
+              {about.vision.text}
+            </p>
           </div>
         </div>
       </Section>
 
       {/* Values */}
       <Section className="bg-blue-50">
-        <h2 className="text-center text-3xl font-bold text-gray-900">Our Values</h2>
+        <h2 className="text-center text-3xl font-bold text-gray-900">
+          Our Values
+        </h2>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {about.values.map((v) => (
-            <Card key={v.title} title={v.title} description={v.description} />
+            <div
+              key={v.title}
+              className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
+            >
+              <div
+                className={`mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl text-xl ${valueBg[v.color]}`}
+              >
+                {valueIcons[v.color]}
+              </div>
+              <h3 className="mb-2 text-lg font-semibold text-gray-900">
+                {v.title}
+              </h3>
+              <p className="text-sm leading-relaxed text-gray-600">
+                {v.description}
+              </p>
+            </div>
           ))}
         </div>
       </Section>
 
       {/* Stats */}
       <Section>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 text-center">
-          {about.stats.map((s) => (
-            <div key={s.label}>
-              <p className="text-4xl font-extrabold text-blue-600">{s.number}</p>
-              <p className="mt-1 text-sm font-medium text-gray-600">{s.label}</p>
-            </div>
-          ))}
-        </div>
+        <AnimatedStats stats={about.stats} />
+      </Section>
+
+      {/* Leadership Team */}
+      <Section className="bg-gray-50">
+        <h2 className="mb-8 text-center text-3xl font-bold text-gray-900">
+          Leadership Team
+        </h2>
+        <TeamSection members={about.team} />
       </Section>
     </>
   );
