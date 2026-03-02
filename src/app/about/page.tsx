@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Section from "@/components/Section";
 import Card from "@/components/Card";
 import about from "@/content/about.json";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "About",
@@ -11,6 +12,14 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([{ name: "About", href: "/about" }])
+          ),
+        }}
+      />
       {/* Hero */}
       <Section className="bg-gradient-to-br from-blue-50 to-white text-center">
         <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">

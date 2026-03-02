@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
 import admissions from "@/content/admissions.json";
+import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Admissions",
@@ -11,6 +12,20 @@ export const metadata: Metadata = {
 export default function AdmissionsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([{ name: "Admissions", href: "/admissions" }])
+          ),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema(admissions.faq)),
+        }}
+      />
       {/* Hero */}
       <Section className="bg-gradient-to-br from-blue-50 to-white text-center">
         <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">

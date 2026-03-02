@@ -3,6 +3,7 @@ import Section from "@/components/Section";
 import Button from "@/components/Button";
 import contact from "@/content/contact.json";
 import site from "@/content/site.json";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -12,6 +13,14 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([{ name: "Contact", href: "/contact" }])
+          ),
+        }}
+      />
       {/* Hero */}
       <Section className="bg-gradient-to-br from-blue-50 to-white text-center">
         <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
