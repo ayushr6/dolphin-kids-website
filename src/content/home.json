@@ -10,19 +10,23 @@
   "highlights": [
     {
       "title": "15:1 Student-Teacher Ratio",
-      "description": "Small class sizes ensure every child gets personal attention and thrives at their own pace."
+      "description": "Small class sizes ensure every child gets personal attention and thrives at their own pace.",
+      "icon": "users"
     },
     {
       "title": "CBSE + International Curriculum",
-      "description": "A blended curriculum that combines the rigour of CBSE with global best practices."
+      "description": "A blended curriculum that combines the rigour of CBSE with global best practices.",
+      "icon": "book"
     },
     {
       "title": "10-Acre Green Campus",
-      "description": "Sprawling grounds with sports fields, gardens, and purpose-built learning spaces."
+      "description": "Sprawling grounds with sports fields, gardens, and purpose-built learning spaces.",
+      "icon": "tree"
     },
     {
       "title": "25+ Co-Curricular Activities",
-      "description": "From robotics to classical dance — discover what lights up your child."
+      "description": "From robotics to classical dance — discover what lights up your child.",
+      "icon": "sparkles"
     }
   ],
   "whyDolphin": {
