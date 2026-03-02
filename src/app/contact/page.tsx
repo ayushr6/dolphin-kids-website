@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Section from "@/components/Section";
-import Button from "@/components/Button";
+import ContactForm from "./ContactForm";
 import contact from "@/content/contact.json";
 import site from "@/content/site.json";
 
@@ -25,59 +25,7 @@ export default function ContactPage() {
       <Section>
         <div className="grid gap-12 lg:grid-cols-2">
           {/* Form */}
-          <form className="space-y-5">
-            {contact.formFields.map((field) => (
-              <div key={field.name}>
-                <label
-                  htmlFor={field.name}
-                  className="mb-1 block text-sm font-medium text-gray-700"
-                >
-                  {field.label}
-                  {field.required && <span className="text-red-500"> *</span>}
-                </label>
-                {field.type === "textarea" ? (
-                  <textarea
-                    id={field.name}
-                    name={field.name}
-                    required={field.required}
-                    rows={4}
-                    className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-                  />
-                ) : field.type === "select" ? (
-                  <select
-                    id={field.name}
-                    name={field.name}
-                    required={field.required}
-                    className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-                  >
-                    <option value="">Select...</option>
-                    {field.options?.map((opt) => (
-                      <option key={opt} value={opt}>
-                        {opt}
-                      </option>
-                    ))}
-                  </select>
-                ) : (
-                  <input
-                    id={field.name}
-                    name={field.name}
-                    type={field.type}
-                    required={field.required}
-                    className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-                  />
-                )}
-              </div>
-            ))}
-
-            {/* Honeypot */}
-            <div className="hidden" aria-hidden="true">
-              <input type="text" name="website" tabIndex={-1} autoComplete="off" />
-            </div>
-
-            <Button type="submit" variant="primary">
-              Send Enquiry
-            </Button>
-          </form>
+          <ContactForm />
 
           {/* Contact Info */}
           <div className="space-y-6">
