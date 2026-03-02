@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Section from "@/components/Section";
+import GalleryClient from "@/components/GalleryClient";
 import gallery from "@/content/gallery.json";
 import { breadcrumbSchema } from "@/lib/schema";
 
@@ -29,31 +30,7 @@ export default function GalleryPage() {
         </p>
       </Section>
 
-      {/* Category Tabs (static for now — agents will enhance) */}
-      <Section>
-        <div className="flex flex-wrap justify-center gap-2">
-          {gallery.categories.map((cat) => (
-            <span
-              key={cat.id}
-              className="rounded-full bg-blue-50 px-4 py-1.5 text-xs font-medium text-blue-700"
-            >
-              {cat.label}
-            </span>
-          ))}
-        </div>
-
-        {/* Image Grid (placeholder — images don't exist yet) */}
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {gallery.images.map((img) => (
-            <div
-              key={img.src}
-              className="flex aspect-[4/3] items-center justify-center rounded-xl bg-gray-100 text-sm text-gray-400"
-            >
-              {img.alt}
-            </div>
-          ))}
-        </div>
-      </Section>
+      <GalleryClient />
     </>
   );
 }
