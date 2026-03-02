@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
+import FaqAccordion from "@/components/FaqAccordion";
 import admissions from "@/content/admissions.json";
 
 export const metadata: Metadata = {
@@ -21,22 +22,62 @@ export default function AdmissionsPage() {
         </p>
       </Section>
 
-      {/* Process Steps */}
+      {/* Process Timeline */}
       <Section>
         <h2 className="text-center text-3xl font-bold text-gray-900">
           Admissions Process
         </h2>
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
-          {admissions.steps.map((s) => (
-            <div key={s.step} className="text-center">
-              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 text-lg font-bold text-white">
-                {s.step}
+
+        {/* Mobile: vertical timeline */}
+        <div className="relative mt-10 md:hidden">
+          {/* Vertical line */}
+          <div className="absolute left-5 top-0 h-full w-0.5 bg-blue-200" />
+
+          <div className="space-y-8">
+            {admissions.steps.map((s) => (
+              <div key={s.step} className="relative flex items-start gap-5 pl-2">
+                {/* Circle */}
+                <div className="relative z-10 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blue-600 text-xs font-bold text-white ring-4 ring-white">
+                  {s.step}
+                </div>
+                {/* Content */}
+                <div className="pt-0.5">
+                  <h3 className="text-sm font-semibold text-gray-900">
+                    {s.title}
+                  </h3>
+                  <p className="mt-1 text-xs leading-relaxed text-gray-600">
+                    {s.description}
+                  </p>
+                </div>
               </div>
-              <h3 className="mt-3 text-sm font-semibold text-gray-900">{s.title}</h3>
-              <p className="mt-1 text-xs text-gray-600">{s.description}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+
+        {/* Desktop: horizontal timeline */}
+        <div className="relative mt-12 hidden md:block">
+          {/* Connecting line */}
+          <div className="absolute left-0 right-0 top-6 mx-auto h-0.5 w-[calc(100%-6rem)] bg-blue-200" />
+
+          <div className="relative grid grid-cols-5 gap-4">
+            {admissions.steps.map((s) => (
+              <div key={s.step} className="flex flex-col items-center text-center">
+                {/* Circle */}
+                <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 text-lg font-bold text-white ring-4 ring-white">
+                  {s.step}
+                </div>
+                {/* Content */}
+                <h3 className="mt-4 text-sm font-semibold text-gray-900">
+                  {s.title}
+                </h3>
+                <p className="mt-1 text-xs leading-relaxed text-gray-600">
+                  {s.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="mt-10 text-center">
           <Button href={admissions.ctaHref}>{admissions.ctaLabel}</Button>
         </div>
@@ -47,20 +88,13 @@ export default function AdmissionsPage() {
         <h2 className="text-center text-3xl font-bold text-gray-900">
           Frequently Asked Questions
         </h2>
-        <div className="mx-auto mt-8 max-w-3xl space-y-6">
-          {admissions.faq.map((f) => (
-            <details
-              key={f.question}
-              className="group rounded-xl border border-gray-200 bg-white p-5"
-            >
-              <summary className="cursor-pointer text-sm font-semibold text-gray-900 group-open:text-blue-600">
-                {f.question}
-              </summary>
-              <p className="mt-3 text-sm text-gray-600 leading-relaxed">
-                {f.answer}
-              </p>
-            </details>
-          ))}
+        <div className="mt-8">
+          <FaqAccordion items={admissions.faq} />
+        </div>
+        <div className="mt-10 text-center">
+          <Button href={admissions.ctaHref} variant="secondary" className="px-8 py-4 text-base">
+            {admissions.ctaLabel}
+          </Button>
         </div>
       </Section>
     </>
