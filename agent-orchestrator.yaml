@@ -1,0 +1,36 @@
+dataDir: ~/.agent-orchestrator
+worktreeDir: ~/.worktrees
+port: 4000
+
+defaults:
+  runtime: tmux
+  agent: claude-code
+  workspace: worktree
+
+projects:
+  dolphin:
+    repo: ayushr6/dolphin-kids-website
+    path: ~/Projects/dolphin-kids-website
+    defaultBranch: main
+    sessionPrefix: dolphin
+    agentRules: |
+      You are working on the Dolphin Kids International School website.
+      Tech stack: Next.js 16 (App Router), TypeScript, Tailwind CSS.
+      Content lives in src/content/*.json — render pages from these files, do NOT hardcode text.
+      Use conventional commits (feat:, fix:, chore:).
+      Keep PRs small and focused on one issue.
+      Always run `npm run lint` and `npm run build` before pushing.
+      Ensure CI passes before marking the PR as ready.
+
+reactions:
+  ci-failed:
+    auto: true
+    action: send-to-agent
+    retries: 2
+  changes-requested:
+    auto: true
+    action: send-to-agent
+    escalateAfter: 30m
+  approved-and-green:
+    auto: false
+    action: notify
