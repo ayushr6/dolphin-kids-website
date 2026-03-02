@@ -12,15 +12,21 @@
     "text": "To be the most trusted international school in India — raising compassionate, confident, and globally-minded citizens."
   },
   "values": [
-    { "title": "Curiosity", "description": "We celebrate questions and encourage exploration." },
-    { "title": "Kindness", "description": "Empathy and respect are at the heart of our community." },
-    { "title": "Excellence", "description": "We set high standards and support every child in reaching them." },
-    { "title": "Joy", "description": "Learning should be a delight, not a chore." }
+    { "title": "Curiosity", "description": "We celebrate questions and encourage exploration.", "color": "blue" },
+    { "title": "Kindness", "description": "Empathy and respect are at the heart of our community.", "color": "pink" },
+    { "title": "Excellence", "description": "We set high standards and support every child in reaching them.", "color": "amber" },
+    { "title": "Joy", "description": "Learning should be a delight, not a chore.", "color": "green" }
   ],
   "stats": [
-    { "number": "1,200+", "label": "Happy Students" },
-    { "number": "100+", "label": "Dedicated Faculty" },
-    { "number": "15", "label": "Years of Excellence" },
-    { "number": "98%", "label": "Parent Satisfaction" }
+    { "value": 1200, "suffix": "+", "label": "Happy Students" },
+    { "value": 100, "suffix": "+", "label": "Dedicated Faculty" },
+    { "value": 15, "suffix": "", "label": "Years of Excellence" },
+    { "value": 98, "suffix": "%", "label": "Parent Satisfaction" }
+  ],
+  "team": [
+    { "name": "Dr. Priya Sharma", "role": "Principal & Director", "initials": "PS" },
+    { "name": "Rajesh Gupta", "role": "Vice Principal", "initials": "RG" },
+    { "name": "Anita Desai", "role": "Head of Academics", "initials": "AD" },
+    { "name": "Vikram Patel", "role": "Head of Student Affairs", "initials": "VP" }
   ]
 }
