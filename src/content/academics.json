@@ -1,0 +1,35 @@
+{
+  "hero": {
+    "title": "Academics",
+    "subtitle": "A thoughtfully designed curriculum that prepares children for the world ahead."
+  },
+  "programs": [
+    {
+      "title": "Pre-K & Kindergarten",
+      "ages": "Ages 3–5",
+      "description": "Play-based learning rooted in the Montessori and Reggio Emilia approaches. Focus on sensory development, language, and social skills.",
+      "highlights": ["Thematic learning units", "Phonics & early literacy", "Art & movement"]
+    },
+    {
+      "title": "Primary School (Grades 1–5)",
+      "ages": "Ages 6–10",
+      "description": "CBSE-aligned curriculum enriched with STEAM projects, reading programmes, and experiential learning trips.",
+      "highlights": ["Integrated STEAM from Grade 1", "Library & reading hour daily", "Annual science fair"]
+    },
+    {
+      "title": "Middle School (Grades 6–8)",
+      "ages": "Ages 11–13",
+      "description": "Rigorous academic preparation with elective options, leadership development, and inter-school competitions.",
+      "highlights": ["Subject-specialist teachers", "Elective tracks (Coding, Art, Music)", "Model UN & debate club"]
+    }
+  ],
+  "approach": {
+    "title": "Our Teaching Approach",
+    "points": [
+      "Inquiry-based learning that puts the child at the centre",
+      "Formative assessments over high-stakes testing",
+      "Differentiated instruction for diverse learners",
+      "Technology-enhanced classrooms with interactive boards"
+    ]
+  }
+}

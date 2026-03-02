@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "title": "About Dolphin Kids",
+    "subtitle": "A legacy of excellence in early and primary education since 2010."
+  },
+  "mission": {
+    "title": "Our Mission",
+    "text": "To provide a joyful, inclusive, and stimulating learning environment that nurtures every child's intellectual curiosity, creativity, and social-emotional growth."
+  },
+  "vision": {
+    "title": "Our Vision",
+    "text": "To be the most trusted international school in India — raising compassionate, confident, and globally-minded citizens."
+  },
+  "values": [
+    { "title": "Curiosity", "description": "We celebrate questions and encourage exploration." },
+    { "title": "Kindness", "description": "Empathy and respect are at the heart of our community." },
+    { "title": "Excellence", "description": "We set high standards and support every child in reaching them." },
+    { "title": "Joy", "description": "Learning should be a delight, not a chore." }
+  ],
+  "stats": [
+    { "number": "1,200+", "label": "Happy Students" },
+    { "number": "100+", "label": "Dedicated Faculty" },
+    { "number": "15", "label": "Years of Excellence" },
+    { "number": "98%", "label": "Parent Satisfaction" }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Dolphin Kids International School",
+  "shortName": "Dolphin Kids",
+  "tagline": "Where Every Child Makes a Splash",
+  "description": "Dolphin Kids International School offers a nurturing, world-class learning environment for children from Pre-K through Grade 8. Our innovative curriculum blends academics, creativity, and character development.",
+  "phone": "+91 98765 43210",
+  "whatsapp": "+919876543210",
+  "email": "admissions@dolphinkids.edu.in",
+  "address": "123 Education Lane, Whitefield, Bangalore 560066",
+  "mapUrl": "https://maps.google.com/?q=Dolphin+Kids+International+School",
+  "socialLinks": {
+    "facebook": "https://facebook.com/dolphinkids",
+    "instagram": "https://instagram.com/dolphinkids",
+    "youtube": "https://youtube.com/@dolphinkids",
+    "twitter": "https://twitter.com/dolphinkids"
+  },
+  "nav": [
+    { "label": "Home", "href": "/" },
+    { "label": "About", "href": "/about" },
+    { "label": "Academics", "href": "/academics" },
+    { "label": "Admissions", "href": "/admissions" },
+    { "label": "Facilities", "href": "/facilities" },
+    { "label": "Gallery", "href": "/gallery" },
+    { "label": "Contact", "href": "/contact" }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "headline": "Where Every Child Makes a Splash",
+    "subheadline": "Nurturing curious minds, building confident leaders — from Pre-K through Grade 8.",
+    "ctaLabel": "Book a Campus Visit",
+    "ctaHref": "/admissions",
+    "secondaryCtaLabel": "Explore Academics",
+    "secondaryCtaHref": "/academics"
+  },
+  "highlights": [
+    {
+      "title": "15:1 Student-Teacher Ratio",
+      "description": "Small class sizes ensure every child gets personal attention and thrives at their own pace."
+    },
+    {
+      "title": "CBSE + International Curriculum",
+      "description": "A blended curriculum that combines the rigour of CBSE with global best practices."
+    },
+    {
+      "title": "10-Acre Green Campus",
+      "description": "Sprawling grounds with sports fields, gardens, and purpose-built learning spaces."
+    },
+    {
+      "title": "25+ Co-Curricular Activities",
+      "description": "From robotics to classical dance — discover what lights up your child."
+    }
+  ],
+  "whyDolphin": {
+    "title": "Why Dolphin Kids?",
+    "points": [
+      "Award-winning faculty with an average of 12 years of teaching experience",
+      "Integrated STEAM programme starting from Grade 1",
+      "Safe, inclusive campus with 24/7 CCTV and trained security",
+      "Parent engagement through the Dolphin Connect app"
+    ]
+  },
+  "testimonials": [
+    {
+      "quote": "My daughter has blossomed since joining Dolphin Kids. The teachers genuinely care about each child's growth.",
+      "author": "Priya M., Parent of Grade 3 student"
+    },
+    {
+      "quote": "The balance between academics and activities is perfect. Our son looks forward to school every day.",
+      "author": "Rahul & Sneha K., Parents of Grade 5 student"
+    }
+  ]
+}

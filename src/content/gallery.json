@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "title": "Gallery",
+    "subtitle": "Moments that capture the Dolphin Kids spirit."
+  },
+  "categories": [
+    { "id": "campus", "label": "Campus" },
+    { "id": "events", "label": "Events" },
+    { "id": "sports", "label": "Sports" },
+    { "id": "arts", "label": "Arts & Culture" },
+    { "id": "classroom", "label": "Classroom" }
+  ],
+  "images": [
+    { "src": "/images/gallery/campus-1.jpg", "alt": "Aerial view of Dolphin Kids campus", "category": "campus" },
+    { "src": "/images/gallery/campus-2.jpg", "alt": "School entrance and reception area", "category": "campus" },
+    { "src": "/images/gallery/event-1.jpg", "alt": "Annual Day celebration on stage", "category": "events" },
+    { "src": "/images/gallery/event-2.jpg", "alt": "Independence Day flag hoisting ceremony", "category": "events" },
+    { "src": "/images/gallery/sports-1.jpg", "alt": "Students playing football on the field", "category": "sports" },
+    { "src": "/images/gallery/sports-2.jpg", "alt": "Swimming competition at the school pool", "category": "sports" },
+    { "src": "/images/gallery/arts-1.jpg", "alt": "Students painting in the art studio", "category": "arts" },
+    { "src": "/images/gallery/arts-2.jpg", "alt": "School band performing at the amphitheatre", "category": "arts" },
+    { "src": "/images/gallery/classroom-1.jpg", "alt": "Interactive classroom session in progress", "category": "classroom" },
+    { "src": "/images/gallery/classroom-2.jpg", "alt": "Science lab experiment with Grade 6 students", "category": "classroom" }
+  ]
+}

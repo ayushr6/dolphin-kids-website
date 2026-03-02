@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "title": "Admissions",
+    "subtitle": "Begin your child's journey at Dolphin Kids. We'd love to welcome your family."
+  },
+  "steps": [
+    { "step": 1, "title": "Enquiry", "description": "Fill out the online enquiry form or call our admissions desk." },
+    { "step": 2, "title": "Campus Visit", "description": "Schedule a guided tour to experience our campus and meet our team." },
+    { "step": 3, "title": "Application", "description": "Submit the application form with required documents." },
+    { "step": 4, "title": "Interaction", "description": "A friendly interaction session for the child and parents." },
+    { "step": 5, "title": "Confirmation", "description": "Receive your offer letter and complete the enrolment." }
+  ],
+  "faq": [
+    {
+      "question": "What age groups do you accept?",
+      "answer": "We accept children from age 3 (Pre-K) through Grade 8 (age 13)."
+    },
+    {
+      "question": "What is the fee structure?",
+      "answer": "Fee details are shared during the campus visit. Please contact our admissions team for the latest schedule."
+    },
+    {
+      "question": "Is transportation available?",
+      "answer": "Yes, we offer GPS-tracked school buses covering all major areas of Bangalore."
+    },
+    {
+      "question": "What documents are required?",
+      "answer": "Birth certificate, previous school records (if applicable), passport-size photos, and address proof."
+    },
+    {
+      "question": "Do you accept mid-year admissions?",
+      "answer": "Subject to availability, we do accept mid-year transfers. Please contact admissions for current openings."
+    }
+  ],
+  "ctaLabel": "Start Your Application",
+  "ctaHref": "/contact"
+}

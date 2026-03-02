@@ -1,0 +1,18 @@
+{
+  "hero": {
+    "title": "Our Facilities",
+    "subtitle": "A campus designed to inspire learning, play, and growth."
+  },
+  "facilities": [
+    { "title": "Smart Classrooms", "description": "Interactive whiteboards, projectors, and ergonomic furniture in every room.", "icon": "monitor" },
+    { "title": "Science Labs", "description": "Dedicated physics, chemistry, and biology labs with modern equipment.", "icon": "flask" },
+    { "title": "Library", "description": "Over 15,000 titles across genres — a cozy reading haven for all ages.", "icon": "book" },
+    { "title": "Sports Complex", "description": "Football field, basketball courts, swimming pool, and indoor gym.", "icon": "trophy" },
+    { "title": "Art & Music Studios", "description": "Purpose-built studios for painting, pottery, vocals, and instruments.", "icon": "palette" },
+    { "title": "Computer Lab", "description": "50+ workstations with coding software, 3D printers, and robotics kits.", "icon": "cpu" },
+    { "title": "Cafeteria", "description": "Nutritionist-approved meals served fresh daily. Allergen-friendly options available.", "icon": "utensils" },
+    { "title": "Medical Room", "description": "On-campus nurse and first-aid facility. Annual health check-ups for all students.", "icon": "heart" },
+    { "title": "Amphitheatre", "description": "300-seat open-air venue for assemblies, performances, and celebrations.", "icon": "mic" },
+    { "title": "Transport Fleet", "description": "GPS-tracked buses with trained attendants covering major routes.", "icon": "bus" }
+  ]
+}

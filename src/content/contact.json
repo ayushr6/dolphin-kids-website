@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "title": "Contact Us",
+    "subtitle": "We'd love to hear from you. Reach out anytime."
+  },
+  "formFields": [
+    { "name": "parentName", "label": "Parent / Guardian Name", "type": "text", "required": true },
+    { "name": "email", "label": "Email Address", "type": "email", "required": true },
+    { "name": "phone", "label": "Phone Number", "type": "tel", "required": true },
+    { "name": "childName", "label": "Child's Name", "type": "text", "required": false },
+    { "name": "gradeInterest", "label": "Grade of Interest", "type": "select", "required": false, "options": ["Pre-K", "Kindergarten", "Grade 1", "Grade 2", "Grade 3", "Grade 4", "Grade 5", "Grade 6", "Grade 7", "Grade 8"] },
+    { "name": "message", "label": "Your Message", "type": "textarea", "required": false }
+  ],
+  "officeHours": "Monday – Friday: 8:00 AM – 4:00 PM | Saturday: 9:00 AM – 1:00 PM"
+}
